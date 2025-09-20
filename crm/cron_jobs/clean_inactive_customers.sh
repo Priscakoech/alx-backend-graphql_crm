@@ -6,7 +6,7 @@
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Run Django shell command to delete inactive customers
-COUNT=$(echo "
+count=$(echo "
 from crm.models import Customer, Order
 from django.utils.timezone import now
 from datetime import timedelta
